@@ -26,6 +26,7 @@ option java_outer_classname = "WorldControlProtos";
 
 import "ignition/msgs/world_reset.proto";
 import "ignition/msgs/header.proto";
+import "ignition/msgs/time.proto";
 
 message WorldControl
 {
@@ -37,4 +38,6 @@ message WorldControl
   uint32 multi_step    = 4;
   WorldReset reset     = 5;
   uint32 seed          = 6;
+
+  Time run_to_time    = 7;
 }
